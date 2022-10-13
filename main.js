@@ -30,8 +30,8 @@ productList.push({
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""'
 });
 productList.push({
-    name: 'TV',
-    price: 220,
+    name: 'Computador',
+    price: 620,
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""'
 });
 productList.push({
@@ -55,4 +55,8 @@ for (product of productList){
     productPrice.innerText = '$' + product.name;
     const productName = document.createElement('p');
     productName.innerHTML = product.name;
+
+    const productinfoFigure = document.createElement('figure');
+    const productImgCart = document.createElement('img');
+    img.setAttribute('src', './icons/bt_add_to_cart.svg');
 }
